@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perita Criminalista | Ciência a Serviço da Justiça</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Barra de progresso de leitura -->
+    <div class="reading-progress" id="progressBar"></div>
+
+    <!-- Cabeçalho e Navegação -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="badge">⚠️ ÁREA RESTRITA • PERÍCIA OFICIAL</span>
+                <h1>PERÍCIA <span>CRIMINAL</span></h1>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#simulador">Simulador</a></li>
+                    <li><a href="#maleta">Equipamentos</a></li>
+                    <li><a href="#caso-pratico">Desafio</a></li>
+                    <li><a href="#carreira">Carreira</a></li>
+                    <li><a href="#historia">História</a></li>
+                    <li><a href="#mercado">Mercado</a></li>
+                    <li><a href="#flashcards">Quiz</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Apresentação da Profissão (Home) -->
+        <section id="home" class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <p class="tagline">EVIDÊNCIAS NÃO MENTEM • CIÊNCIA & JUSTIÇA</p>
+                <h2>Perita Criminalista</h2>
+                <p class="subtitle">Desvendando vestígios invisíveis através do rigor científico, tecnologia avançada e análise minuciosa.</p>
+                
+                <div class="hero-grid">
+                    <div class="card-intro">
+                        <h3>🔍 O Papel da Perita Criminalista</h3>
+                        <p>A Perita Criminalista é a cientista oficial do Estado responsável por coletar, preservar e analisar vestígios materiais e digitais deixados em cenas de crimes. Sua atuação transforma evidências silenciosas em provas técnicas irrefutáveis nos tribunais.</p>
+                        <p style="margin-top: 1rem;"><strong>Relevância Social:</strong> Garante que a Justiça seja feita com base na verdade científica, protegendo inocentes e assegurando o devido processo legal.</p>
+                    </div>
+
+                    <div class="hero-image-card">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80" alt="Perita criminal analisando amostras em laboratório forense com microscópio" loading="lazy">
+                        <span class="img-caption">Análise laboratorial e rigor metodológico</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Simulador Interativo de Cena de Crime -->
+        <section id="simulador" class="section-container bg-darker reveal">
+            <h2 class="section-title">🔬 Simulador Interativo: Análise de Vestígios</h2>
+            <p class="section-subtitle">Clique nos marcadores amarelos de evidência abaixo para inspecionar o laudo técnico de cada vestígio:</p>
+
+            <div class="simulator-box">
+                <div class="evidence-markers">
+                    <button class="marker-btn active" data-evidence="1">
+                        <span class="marker-tag">EVIDÊNCIA #01</span>
+                        <strong>Fragmento Papiloscópico</strong>
+                    </button>
+                    <button class="marker-btn" data-evidence="2">
+                        <span class="marker-tag">EVIDÊNCIA #02</span>
+                        <strong>Estojo de Munição</strong>
+                    </button>
+                    <button class="marker-btn" data-evidence="3">
+                        <span class="marker-tag">EVIDÊNCIA #03</span>
+                        <strong>Dispositivo Criptografado</strong>
+                    </button>
+                    <button class="marker-btn" data-evidence="4">
+                        <span class="marker-tag">EVIDÊNCIA #04</span>
+                        <strong>Amostra Biológica</strong>
+                    </button>
+                </div>
+
+                <div class="evidence-report" id="evidenceReport">
+                    <div class="report-header">
+                        <span class="report-code">LAUDO PRELIMINAR • #01</span>
+                        <span class="report-status">EM ANÁLISE</span>
+                    </div>
+                    <h3 id="reportTitle">Impressão Digital Latente em Superfície Lisa</h3>
+                    <p id="reportDesc">Vestígio invisível a olho nu revelado através da aplicação de pó magnético e luz forense (ALS). Após fotografia em escala métrica, os pontos característicos (minúcias) são confrontados no sistema AFIS para identificação imediata.</p>
+                    <div class="report-meta">
+                        <span><strong>Área:</strong> Papiloscopia Forense</span>
+                        <span><strong>Equipamento:</strong> Luz Forense & Pó Revelador</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NOVO: Maleta Pericial & Equipamentos Tecnológicos -->
+        <section id="maleta" class="section-container reveal">
+            <h2 class="section-title">🧰 Maleta Pericial & Tecnologia Forense</h2>
+            <p class="section-subtitle">Explore os instrumentos científicos utilizados pelas peritas para revelar o que está oculto:</p>
+
+            <div class="tools-grid">
+                <article class="tool-card">
+                    <div class="tool-header">
+                        <span class="tool-code">EQ-01</span>
+                        <span class="tool-type">QUÍMICA</span>
+                    </div>
+                    <h3>Reagente Luminol</h3>
+                    <p>Solução química que reage com o ferro presente na hemoglobina, emitindo quimioluminescência azulada para detectar vestígios latentes mesmo após limpeza do local.</p>
+                </article>
+
+                <article class="tool-card">
+                    <div class="tool-header">
+                        <span class="tool-code">EQ-02</span>
+                        <span class="tool-type">ÓPTICA</span>
+                    </div>
+                    <h3>Luz Forense (ALS)</h3>
+                    <p>Lanternas de espectro controlado (UV, azul, verde) usadas com óculos filtrantes para visualizar fibras, fluidos biológicos e impressões digitais sem contaminar a prova.</p>
+                </article>
+
+                <article class="tool-card">
+                    <div class="tool-header">
+                        <span class="tool-code">EQ-03</span>
+                        <span class="tool-type">DIGITAL</span>
+                    </div>
+                    <h3>Escâner Laser 3D</h3>
+                    <p>Mapeia milhões de pontos por segundo, criando uma réplica digital milimétrica do ambiente para que juízes e peritos revisitem a cena virtualmente.</p>
+                </article>
+
+                <article class="tool-card">
+                    <div class="tool-header">
+                        <span class="tool-code">EQ-04</span>
+                        <span class="tool-type">BALÍSTICA</span>
+                    </div>
+                    <h3>Microcomparador Óptico</h3>
+                    <p>Microscópio duplo de alta precisão que compara lado a lado as estrias microscópicas de dois projéteis para comprovar se saíram do mesmo cano de arma.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- NOVO: Desafio Interativo "Modo Investigação" -->
+        <section id="caso-pratico" class="section-container bg-darker reveal">
+            <h2 class="section-title">🕵️‍♀️ Desafio: Você no Comando da Perícia</h2>
+            <p class="section-subtitle">Analise o cenário abaixo e decida qual procedimento pericial deve ser priorizado:</p>
+
+            <div class="case-box">
+                <div class="case-scenario">
+                    <span class="case-badge">OCORRÊNCIA SIMULADA #2026-B</span>
+                    <h3>O Caso do Cofre Violado</h3>
+                    <p>Uma empresa de tecnologia teve seu servidor central invadido durante a madrugada. Não há sinais de arrombamento na porta principal, mas o terminal de acesso está ligado e há um copo de vidro sobre a mesa ao lado do teclado.</p>
+                    <p style="margin-top: 0.75rem; color: var(--evidence-yellow);"><strong>Pergunta:</strong> Qual deve ser a primeira ação rigorosa da equipe de perícia ao chegar ao local?</p>
+                </div>
+
+                <div class="case-options" id="caseOptions">
+                    <button class="option-btn" data-correct="false">
+                        <strong>A)</strong> Pegar o copo com as mãos para cheirar o líquido e desligar o computador imediatamente da tomada.
+                    </button>
+                    <button class="option-btn" data-correct="true">
+                        <strong>B)</strong> Isolar a área, fotografar o local com escala métrica, preservar a memória RAM do sistema e coletar o copo com luvas pela base para papiloscopia.
+                    </button>
+                    <button class="option-btn" data-correct="false">
+                        <strong>C)</strong> Chamar os funcionários da empresa para mexerem no computador e verificarem quais arquivos sumiram antes de lacrar a sala.
+                    </button>
+                </div>
+
+                <div class="case-feedback" id="caseFeedback"></div>
+            </div>
+        </section>
+
+        <!-- Áreas de Atuação com Imagens -->
+        <section id="atuacao" class="section-container reveal">
+            <h2 class="section-title">Rotina & Especialidades Forenses</h2>
+            <p class="section-subtitle">Conheça as principais frentes onde a ciência forense atua no dia a dia:</p>
+
+            <div class="areas-grid">
+                <article class="area-card">
+                    <div class="area-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=800&q=80" alt="Equipamentos de análise química e tubos de ensaio em laboratório forense" loading="lazy">
+                        <span class="area-tag">LABORATÓRIO</span>
+                    </div>
+                    <div class="area-content">
+                        <h3>Biologia & Química Forense</h3>
+                        <p>Exames de perfil genético (DNA), análise de substâncias entorpecentes, toxicologia e identificação de fluidos biológicos em vestígios microscópicos.</p>
+                    </div>
+                </article>
+
+                <article class="area-card">
+                    <div class="area-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80" alt="Tela com códigos de segurança cibernética e perícia digital" loading="lazy">
+                        <span class="area-tag">TECNOLOGIA</span>
+                    </div>
+                    <div class="area-content">
+                        <h3>Computação Forense</h3>
+                        <p>Extração de dados apagados de smartphones e computadores, rastreamento de invasões cibernéticas, fraudes bancárias e análise de metadados.</p>
+                    </div>
+                </article>
+
+                <article class="area-card">
+                    <div class="area-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=800&q=80" alt="Pesquisadora manipulando amostras científicas com luvas de proteção" loading="lazy">
+                        <span class="area-tag">CAMPO & VESTÍGIOS</span>
+                    </div>
+                    <div class="area-content">
+                        <h3>Perícia de Local & Balística</h3>
+                        <p>Isolamento da cena, levantamento papiloscópico (impressões digitais), reconstrução de dinâmica de eventos e confronto microbalístico.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Como Ingressar na Carreira & Mitos vs Realidade -->
+        <section id="carreira" class="section-container bg-darker reveal">
+            <h2 class="section-title">Formação & Como Ingressar</h2>
+            <p class="section-subtitle">O caminho acadêmico e profissional para se tornar uma Perita Criminalista no Brasil:</p>
+
+            <div class="career-grid">
+                <div class="career-steps">
+                    <h3>🎓 Etapas da Carreira</h3>
+                    <div class="step-item">
+                        <span class="step-num">01</span>
+                        <div>
+                            <h4>Graduação de Nível Superior</h4>
+                            <p>Concluir bacharelado ou licenciatura em áreas aceitas nos editais: Química, Biologia, Farmácia, Engenharia, Ciência da Computação, Física, Contabilidade, Medicina ou Direito.</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-num">02</span>
+                        <div>
+                            <h4>Concurso Público Oficial</h4>
+                            <p>Aprovação em provas objetivas, discursivas, exame médico, teste de aptidão física (TAF), avaliação psicológica e investigação social.</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-num">03</span>
+                        <div>
+                            <h4>Academia de Polícia (Curso de Formação)</h4>
+                            <p>Treinamento prático intensivo em criminalística, cadeia de custódia, fotografia forense, balística e redação de laudos periciais.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mitos vs Realidade -->
+                <div class="myths-box">
+                    <h3>🎬 Séries de TV vs. Perícia Real</h3>
+                    <div class="myth-card">
+                        <p class="myth-label">❌ MITO (Ficção)</p>
+                        <p>A perita interroga suspeitos, prende criminosos e resolve o exame de DNA em 15 minutos.</p>
+                    </div>
+                    <div class="reality-card">
+                        <p class="reality-label">✅ REALIDADE (Perícia Oficial)</p>
+                        <p>A perita atua exclusivamente na prova técnica e científica. O interrogatório cabe ao Delegado e exames laboratoriais complexos levam dias ou semanas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NOVO: Glossário Técnico Forense -->
+            <div class="glossary-box" style="margin-top: 2rem;">
+                <h3>📖 Glossário Técnico Forense</h3>
+                <div class="glossary-grid">
+                    <div class="glossary-item">
+                        <strong>Vestígio vs. Evidência</strong>
+                        <p><em>Vestígio</em> é qualquer material encontrado no local. Quando a perícia comprova sua relação com o crime, ele se torna uma <em>Evidência</em>.</p>
+                    </div>
+                    <div class="glossary-item">
+                        <strong>Laudo Pericial</strong>
+                        <p>Documento oficial técnico-científico assinado pela perita, contendo toda a metodologia, análises e conclusões apresentadas ao juiz.</p>
+                    </div>
+                    <div class="glossary-item">
+                        <strong>Papiloscopia</strong>
+                        <p>Ciência que estuda a identificação humana através das papilas dérmicas presentes nas pontas dos dedos, palmas das mãos e plantas dos pés.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Fatos Históricos (Integração com História) -->
+        <section id="historia" class="section-container reveal">
+            <h2 class="section-title">Fatos Históricos & Evolução</h2>
+            <p class="section-subtitle">A trajetória da ciência criminalística ao longo dos séculos (Integração com História):</p>
+
+            <div class="timeline">
+                <article class="timeline-item">
+                    <span class="year">Século XIX • 1891</span>
+                    <h3>Origem da Dactiloscopia Moderna</h3>
+                    <p>Com o avanço da urbanização pós-Revolução Industrial, o antropólogo Juan Vucetich criou na Argentina o primeiro sistema prático de classificação por impressões digitais, substituindo métodos subjetivos de identificação.</p>
+                </article>
+                <article class="timeline-item">
+                    <span class="year">1910 • França</span>
+                    <h3>O Primeiro Laboratório Criminalístico</h3>
+                    <p>Edmond Locard fundou em Lyon o primeiro laboratório oficial de polícia científica. É dele o Princípio da Troca de Locard: <em>"Todo contato deixa uma marca"</em>, base de toda investigação forense.</p>
+                </article>
+                <article class="timeline-item">
+                    <span class="year">1984 • Revolução Genética</span>
+                    <h3>Descoberta do DNA Forense</h3>
+                    <p>Sir Alec Jeffreys desenvolveu a técnica de impressão genética (DNA profiling), revolucionando a identificação humana e permitindo solucionar casos arquivados há décadas.</p>
+                </article>
+                <article class="timeline-item">
+                    <span class="year">Século XXI • Era Digital</span>
+                    <h3>Escaneamento 3D e Inteligência Artificial</h3>
+                    <p>A perícia moderna incorpora scanners a laser para reconstrução virtual de cenas de crime, bancos nacionais integrados de perfis genéticos e perícia avançada em crimes digitais.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- 3. Panorama Atual e Mercado (Integração Interdisciplinar) -->
+        <section id="mercado" class="section-container bg-darker reveal">
+            <h2 class="section-title">Panorama Atual & Mercado de Trabalho</h2>
+            <p class="section-subtitle">Dados estatísticos, remuneração e empregabilidade (Integração: Matemática, Geografia e Sociologia):</p>
+            
+            <div class="stats-grid">
+                <article class="stat-card">
+                    <span class="stat-number">R$ 13.500+</span>
+                    <h4>Média Salarial Inicial</h4>
+                    <p>Remuneração inicial nos Institutos de Criminalística estaduais, podendo superar R$ 24.000 na Polícia Federal.</p>
+                </article>
+                
+                <article class="stat-card">
+                    <span class="stat-number">+38%</span>
+                    <h4>Crescimento na Área Digital</h4>
+                    <p>Aumento expressivo na abertura de vagas para peritos com formação em Ciência da Computação e Engenharia.</p>
+                </article>
+
+                <article class="stat-card">
+                    <span class="stat-number">100%</span>
+                    <h4>Concurso Público</h4>
+                    <p>Exige diploma de Ensino Superior específico (Química, Biologia, Farmácia, Engenharia, TI, Medicina ou Direito).</p>
+                </article>
+            </div>
+
+            <!-- Gráfico de Empregabilidade -->
+            <div class="chart-container">
+                <h3>📊 Distribuição de Demanda por Especialidade Forense no Brasil</h3>
+                <p class="chart-subtitle">Projeção de demanda nos concursos e institutos oficiais de perícia:</p>
+                
+                <div class="bar-group">
+                    <div class="bar-label">
+                        <span>Perícia Digital & Crimes Cibernéticos</span>
+                        <span>38%</span>
+                    </div>
+                    <div class="bar-bg">
+                        <div class="bar-fill" style="width: 38%;"></div>
+                    </div>
+                </div>
+
+                <div class="bar-group">
+                    <div class="bar-label">
+                        <span>Química, Toxicologia e Biologia Forense (DNA)</span>
+                        <span>29%</span>
+                    </div>
+                    <div class="bar-bg">
+                        <div class="bar-fill" style="width: 29%;"></div>
+                    </div>
+                </div>
+
+                <div class="bar-group">
+                    <div class="bar-label">
+                        <span>Perícia de Local de Crime, Engenharia e Balística</span>
+                        <span>21%</span>
+                    </div>
+                    <div class="bar-bg">
+                        <div class="bar-fill" style="width: 21%;"></div>
+                    </div>
+                </div>
+
+                <div class="bar-group">
+                    <div class="bar-label">
+                        <span>Contabilidade Forense e Documentoscopia</span>
+                        <span>12%</span>
+                    </div>
+                    <div class="bar-bg">
+                        <div class="bar-fill" style="width: 12%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sub-topics" style="margin-top: 2rem;">
+                <h3>Análise Interdisciplinar da Carreira</h3>
+                <ul class="topics-list">
+                    <li><strong>Geografia & Regionalização:</strong> Grandes centros urbanos concentram laboratórios de alta complexidade (DNA e balística), enquanto núcleos do interior demandam peritos externos para atendimento rápido de ocorrências.</li>
+                    <li><strong>Sociologia & Direitos Humanos:</strong> A prova pericial técnica substitui métodos subjetivos de investigação, fortalecendo a democracia e garantindo julgamentos mais justos.</li>
+                    <li><strong>Matemática & Física Aplicada:</strong> Essenciais no cálculo de trajetórias balísticas, análise de manchas de sangue, velocidade em acidentes de trânsito e estatística populacional de DNA.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Recurso Interativo: Flashcards -->
+        <section id="flashcards" class="section-container reveal">
+            <h2 class="section-title">Quiz Forense Interativo</h2>
+            <p class="section-subtitle">Clique nos cartões abaixo para virar e testar seus conhecimentos:</p>
+
+            <div class="flashcards-container">
+                <div class="flashcard">
+                    <div class="flashcard-inner">
+                        <div class="flashcard-front">
+                            <span class="card-number">01</span>
+                            <h4>Princípio Fundamental</h4>
+                            <p>O que afirma o Princípio da Troca de Locard?</p>
+                            <span class="flashcard-hint">↻ Clique para revelar</span>
+                        </div>
+                        <div class="flashcard-back">
+                            <p><strong>"Todo contato deixa uma marca."</strong><br><br>Sempre que dois corpos entram em contato, há transferência mútua de vestígios microscópicos entre eles.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flashcard">
+                    <div class="flashcard-inner">
+                        <div class="flashcard-front">
+                            <span class="card-number">02</span>
+                            <h4>Segurança Jurídica</h4>
+                            <p>O que é a Cadeia de Custódia?</p>
+                            <span class="flashcard-hint">↻ Clique para revelar</span>
+                        </div>
+                        <div class="flashcard-back">
+                            <p><strong>Rastreabilidade da Prova:</strong><br><br>É o registro cronológico e lacrado de toda a trajetória de um vestígio, garantindo que não houve adulteração até o julgamento.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flashcard">
+                    <div class="flashcard-inner">
+                        <div class="flashcard-front">
+                            <span class="card-number">03</span>
+                            <h4>Atribuições</h4>
+                            <p>Qual a diferença entre Perita Criminal e Médica Legista?</p>
+                            <span class="flashcard-hint">↻ Clique para revelar</span>
+                        </div>
+                        <div class="flashcard-back">
+                            <p><strong>Foco de Análise:</strong><br><br>A Perita Criminal analisa objetos, locais, armas e dados; a Médica Legista (formada em Medicina) examina pessoas vivas e cadáveres.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flashcard">
+                    <div class="flashcard-inner">
+                        <div class="flashcard-front">
+                            <span class="card-number">04</span>
+                            <h4>Química Forense</h4>
+                            <p>Para que serve o reagente Luminol na cena do crime?</p>
+                            <span class="flashcard-hint">↻ Clique para revelar</span>
+                        </div>
+                        <div class="flashcard-back">
+                            <p><strong>Quimioluminescência:</strong><br><br>Reage com o ferro presente na hemoglobina do sangue, emitindo uma luz azulada mesmo quando o local foi lavado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Botão Flutuante Voltar ao Topo -->
+    <button id="backToTop" class="back-to-top" title="Voltar ao topo">↑</button>
+
+    <!-- 4. Rodapé / Créditos -->
+    <footer id="creditos" class="footer">
+        <div class="footer-container">
+            <p class="footer-project">PROJETO INTERDISCIPLINAR • FEIRA DE PROFISSÕES 2026</p>
+            
+            <div class="author-badge">
+                DESENVOLVIDO POR: <strong>Brenda Bianca Nunes</strong>
+            </div>
+            
+            <p><strong>Turma:</strong> 2°ano C &nbsp;|&nbsp; <strong>Disciplina:</strong>Programação</p>
+            
+            <div class="footer-links">
+                <a href="https://github.com/seu-usuario/seu-repositorio" target="_blank" rel="noopener noreferrer">📂 Repositório GitHub</a>
+                <a href="https://seu-usuario.github.io/seu-repositorio/" target="_blank" rel="noopener noreferrer">🌐 GitHub Pages</a>
+                <a href="#home">⬆️ Topo da Página</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
